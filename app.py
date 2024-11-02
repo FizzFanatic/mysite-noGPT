@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 
 @app.route("/", methods=["GET"])
-def main_menu():
+def page_menu():
     return render_template("index.html")
 
 
