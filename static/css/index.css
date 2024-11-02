@@ -36,3 +36,9 @@ header a:hover {
 header li {
     display: inline; /* Свойство display определяет тип отображения элемента */
 }
+
+header a.active {
+    background-color: #ae2dfd;
+    border-radius: 0% 0% 50% 70%; /* border-radius — это CSS-свойство, позволяющее разработчикам определять, как скругляются границы блока */
+    color: #ffffff;
+}
