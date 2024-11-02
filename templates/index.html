@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт с полезной информацией на разные темы">
+
+    <!-- Подключаем стили с директории static/css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Моя главная страница</title>
+
+</head>
+<body>
+    <header>
+        <!-- создаем список -->
+        <ul>
+            <li><a href="{{ url_for('page_tools') }}">Инструменты</a></li>
+            <li><a href="{{ url_for('page_services') }}">Услуги</a></li>
+            <li><a href="{{ url_for('page_academy') }}">Академия</a></li>
+        </ul>
+    </header>
+</body>
+</html>
