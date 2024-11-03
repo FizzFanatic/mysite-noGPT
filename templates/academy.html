@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Полезные статьи и прочее">
+
+    <!-- Подключаем стили с директории static/css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/academy.css') }}">
+    <title>Академия</title>
+
 </head>
 <body>
-  <h1>Страница Академия находится в разработке</h1>
+    <header>
+        <!-- создаем список -->
+        <ul>
+            <li><a href="{{ url_for('page_menu') }}">Главная</a></li>
+            <li><a href="{{ url_for('page_tools') }}">Инструменты</a></li>
+            <li><a href="{{ url_for('page_services') }}">Услуги</a></li>
+            <li><a href="{{ url_for('page_academy') }}" class="active">Академия</a></li>
+        </ul>
+    </header>
+
+        <h1>Страница Академия</h1>
 </body>
 </html>

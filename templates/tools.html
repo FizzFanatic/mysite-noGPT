@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Инструменты для бизнеса в интернете">
+
+    <!-- Подключаем стили с директории static/css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tools.css') }}">
+    <title>Инструменты</title>
+
 </head>
 <body>
-    <h1>Страница Инструменты находится в разработке</h1>
+    <header>
+        <!-- создаем список -->
+        <ul>
+            <li><a href="{{ url_for('page_menu') }}">Главная</a></li>
+            <li><a href="{{ url_for('page_tools') }}" class="active">Инструменты</a></li>
+            <li><a href="{{ url_for('page_services') }}">Услуги</a></li>
+            <li><a href="{{ url_for('page_academy') }}">Академия</a></li>
+        </ul>
+    </header>
+
+        <h1>Страница с инструментами</h1>
 </body>
 </html>

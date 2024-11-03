@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #f5f6f7; /* Цвет фона на сайте */
+    margin: 0; /* свойство margin определяет внешний отступ на всех четырёх сторонах элемента */
+    padding-top: 0px; /* Отступ от верхнего края блока */
+}
+
+header {
+    background: #ffffff;
+    text-align: center;
+}
+
+/* Используем селектор потомков */
+header a {
+    text-decoration: none; /* Убираем нижнее подчеркивание у ссылок */
+    font-size: 25px;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    padding: 20px;
+}
+
+header ul {
+    list-style: none; /* Убираем маркеры */
+    margin: 0; /* свойство margin определяет внешний отступ на всех четырёх сторонах элемента */
+    padding: 20px;
+}
+
+/* :hover срабатывает, когда пользователь наводит на элемент мышью */
+header a:hover {
+    color: #ae2dfd;
+    text-decoration: none; /* Убираем нижнее подчеркивание у ссылок */
+}
+
+header li {
+    display: inline; /* Свойство display определяет тип отображения элемента */
+}
+
+header a.active {
+    background-color: #ae2dfd;
+    border-radius: 0% 0% 70% 50%; /* border-radius — это CSS-свойство, позволяющее разработчикам определять, как скругляются границы блока */
+    color: #ffffff;
+}
